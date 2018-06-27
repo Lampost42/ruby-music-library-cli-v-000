@@ -59,7 +59,7 @@ module Concerns
       self.songs.sort_by{|item| item.name}
     end
     
-    def put_list(check)
+    def put_list
       list = self.sort_by_name
       if self.class == Artist
         list.each_with_index{|song, i| puts "#{i + 1}. #{song.name} - #{song.genre.name}"}
