@@ -55,13 +55,13 @@ class MusicLibraryController
   
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
-    artist = Artist.get_name
+    artist = Artist.get_name(gets.chomp)
     artist.put_list unless artist == nil
   end
   
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
-    genre = Genre.get_name
+    genre = Genre.get_name(gets.chomp)
     genre.put_list unless genre == nil
   end
   
