@@ -30,7 +30,8 @@ module Concerns
       new
     end
     
-    def get_name(name)
+    def get_name
+      name = get.chomp
       self.find_by_name(name)
     end
     
